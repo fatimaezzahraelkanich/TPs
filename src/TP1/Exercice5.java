@@ -19,4 +19,3 @@ public class Exercice5 {
             }
             System.out.println("la valeur est :" +a);
         }}
-}

@@ -10,8 +10,8 @@ public class Ex3 {
             } while (N < 10 || N > 50);
             int[] tableau = new int[N];
             for (int i = 0; i < N; i++) {
-                System.out.print("Entrez la valeur pour l'élément " + i + " : ");
-                tableau[i] = scanner.nextInt();
+                System.out.print("Entrez la valeur pour l'élément " + (i+1) + " : ");
+                tableau[i] = s.nextInt();
             }
             System.out.println("Tableau résultat :");
             for (int i = 0; i < N; i++) {
@@ -19,4 +19,3 @@ public class Ex3 {
             }
         }
     }
-}

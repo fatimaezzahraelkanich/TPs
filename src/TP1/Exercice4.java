@@ -10,4 +10,3 @@ public class Exercice4 {
         System.out.println("la valeur est :" +Math.pow(x,n));
     }
 }
-}

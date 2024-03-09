@@ -2,18 +2,15 @@ package TP3;
 import java.util.Scanner;
 public class Ex6 {
 
-    public class TableauPosNegExample {
         public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
+            Scanner s = new Scanner(System.in);
             int N;
-            do {
-                System.out.print("Entrez la taille du tableau (entre 10 et 50) : ");
-                N = scanner.nextInt();
-            } while (N < 10 || N > 50);
+                System.out.print("Entrez la taille du tableau : ");
+                N = s.nextInt();
             int[] tableau = new int[N];
             for (int i = 0; i < N; i++) {
-                System.out.print("Entrez la valeur pour l'élément " + i + " : ");
-                tableau[i] = scanner.nextInt();
+                System.out.print("Entrez la valeur pour l'élément " + (i+1) + " : ");
+                tableau[i] = s.nextInt();
             }
             int[] TP = new int[N];
             int[] TN = new int[N];
@@ -38,6 +35,6 @@ public class Ex6 {
             for (int i = 0; i < tnSize; i++) {
                 System.out.print(TN[i] + " ");
             }
-        }
-    }
-}
+
+    }}
+

@@ -1,5 +1,5 @@
 package TP1;
-import java.util.System;
+import java.util.Scanner;
 public class Partie2exo5 {
         public static void main(String[] args) {
             int b[][]=new int[22][2];
@@ -23,4 +23,3 @@ public class Partie2exo5 {
             System.out.println("+ Le nombre des joueurs qui n'on pas marqué: "+sansbut);
         }
     }
-}

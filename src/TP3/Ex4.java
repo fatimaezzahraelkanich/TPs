@@ -9,19 +9,19 @@ public class Ex4 {
                 N = s.nextInt();
             } while (N < 10 || N > 50);
             int[] tableau = new int[N];
-            for (int i = 0; i < N; i++) {
+            for (int i = 1; i < N; i++) {
                 System.out.print("Entrez la valeur pour l'élément " + i + " : ");
                 tableau[i] = s.nextInt();
             }
-            int newSize = 0;
+            int n = 0;
             for (int i = 0; i < N; i++) {
                 if (tableau[i] != 5) {
-                    tableau[newSize] = tableau[i];
-                    newSize++;
+                    tableau[n] = tableau[i];
+                    n++;
                 }
             }
             System.out.println("Tableau résultat :");
-            for (int i = 0; i < newSize; i++) {
+            for (int i = 1; i < n; i++) {
                 System.out.print(tableau[i] + " ");
             }
         }
